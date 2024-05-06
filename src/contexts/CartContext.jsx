@@ -1,10 +1,10 @@
-import { createContext } from 'react';
-import useLocalStorage from '../hooks/useLocalStorage';
+import { createContext } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const a = 111;
 
 const CartContextProvider = ({ children }) => {
-  const [cart, setCart] = useLocalStorage('s11g1', []);
+  const [cart, setCart] = useLocalStorage("s11g1", []);
 
   const addItem = (item) => {
     setCart([...cart, item]);
